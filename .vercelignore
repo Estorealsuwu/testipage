@@ -1,0 +1,5 @@
+.env*
+test/
+scripts/dev.mjs
+scripts/memory-store.mjs
+README.md

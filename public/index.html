@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="te la creiste we">
+  <title>te la creiste we</title>
+  <link rel="icon" href="/meme.png" type="image/png">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" type="module"></script>
+</head>
+<body>
+  <main class="meme-page">
+    <figure class="meme">
+      <h1>te la creiste we</h1>
+      <img src="/meme.png" width="554" height="554" alt="Un animal sonriente en el meme Te la creíste, we" fetchpriority="high">
+    </figure>
+    <p id="tracking-status" class="privacy">Este sitio registra tu IP y la fecha de acceso.</p>
+  </main>
+  <dialog id="owner-panel" aria-labelledby="panel-title">
+    <header class="panel-header"><h2 id="panel-title">Registro de visitas</h2><button id="close-panel" class="close-button" aria-label="Cerrar panel" type="button">×</button></header>
+    <p id="demo-notice" class="demo-notice" hidden>Vista local · Datos temporales.</p>
+    <div id="error" class="error-message" role="alert" hidden></div>
+    <section id="login-panel" aria-label="Acceso privado">
+      <p class="muted">Ingresa tu contraseña para ver el contador y las últimas 100 IP registradas.</p>
+      <form id="login-form"><label for="password">Contraseña</label><input id="password" name="password" type="password" autocomplete="current-password" required maxlength="512"><button id="login-button" class="button primary" type="submit">Entrar</button></form>
+    </section>
+    <section id="admin-panel" hidden aria-label="Estadísticas privadas">
+      <div class="admin-stats"><article><h3>Visitas totales</h3><p id="total">—</p></article><article><h3>IP distintas</h3><p id="unique">—</p></article><article><h3>En el historial</h3><p id="records">—</p></article></div>
+      <div class="panel-actions"><p class="muted">Últimas visitas · Hora de tu dispositivo</p><button id="refresh" class="button secondary" type="button">Actualizar</button></div>
+      <div class="table-scroll"><table><thead><tr><th scope="col">Dirección IP</th><th scope="col">Fecha</th><th scope="col">Hora</th></tr></thead><tbody id="visits"></tbody></table></div>
+      <p id="empty" class="muted" hidden>Todavía no hay visitas registradas.</p>
+      <div class="panel-actions"><p id="updated" class="muted" role="status"></p><button id="logout" class="button secondary" type="button" hidden>Cerrar sesión</button></div>
+    </section>
+  </dialog>
+</body>
+</html>
