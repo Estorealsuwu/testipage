@@ -10,11 +10,10 @@ async function recordVisit() {
   try {
     const response = await fetch('/api/visits', { method: 'POST', cache: 'no-store', keepalive: true });
     if (!response.ok) throw new Error('counter unavailable');
-    const data = await response.json();
+    await response.json();
     recorded = true;
-    if (data.mode === 'demo') document.getElementById('tracking-status').textContent = 'Prueba local · Los registros son temporales.';
   } catch {
-    document.getElementById('tracking-status').textContent = 'El registro de visitas no está disponible en este momento.';
+    console.warn('No se pudo registrar la visita.');
   } finally {
     pending = false;
   }

@@ -1,6 +1,6 @@
 # te la creiste we · Una página para Vercel
 
-La página pública muestra la imagen original y el texto **te la creiste we** encima, adaptados al teléfono y a la computadora. El contador registra las visitas en segundo plano. Un aviso pequeño informa que se registra la IP y la fecha.
+La página pública muestra la imagen original y el texto **te la creiste we** encima, adaptados al teléfono y a la computadora. El contador registra las visitas en segundo plano.
 
 Solo existe una página HTML. Para ver las estadísticas privadas, abre **`/#panel`** en la misma URL e ingresa la contraseña. El panel se abre sobre el meme; el historial no se entrega sin contraseña.
 
